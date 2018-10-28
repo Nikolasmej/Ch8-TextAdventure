@@ -158,9 +158,18 @@ public class Game
     private void printWelcome()
     {
         System.out.println();
-        System.out.println("Welcome to the World of Zuul!");
-        System.out.println("World of Zuul is a new, incredibly boring adventure game.");
-        System.out.println("Type '" + CommandWord.HELP + "' if you need help.");
+        System.out.println("Welcome to the World of Corp!");
+        System.out.println("World of Corp is a new, little boring adventure game.");
+        System.out.println("There is a time limit,you have fifteen moves in total. ");
+        System.out.println("In the company each room contains a unique item " +
+                            "with description and weight. ");
+        System.out.print("*Type '" + CommandWord.HELP + "' if you need help.");
+        System.out.println(" *Type '" + CommandWord.EAT + "' if you are hungry.");
+        System.out.print("*Type '" + CommandWord.LOOK + "' if you need see location.");
+        System.out.println(" *Type '" + CommandWord.BACK + "' to go back.");
+        System.out.print("*Type '" + CommandWord.CHARGE + "' to charge beamer. ");  
+        System.out.println(" *Type '" + CommandWord.FIRE + "' to fire beamer. ");   
+        System.out.println("LET'S START THE GAME!");
         System.out.println();
         System.out.println(currentRoom.getLongDescription());
     }

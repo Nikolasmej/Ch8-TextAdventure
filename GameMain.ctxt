@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=GameMain
+comment0.text=\r\n\ Class\ GameMain\ -\ \r\n\r\n\ This\ class\ is\ part\ of\ the\ "Corp\ Adventure"\ application.\ \r\n\ "Corp\ Adventure"\ is\ a\ very\ simple,\ text\ based\ adventure\ game.\ \ \r\n\r\n\ It\ has\ only\ main\ method\ with\ an\ object\ of\ Game\ class\ to\ call\r\n\ the\ play\ method.\r\n\ \r\n\ @author\ \ Nicolas\ M.\r\n\ @version\ 1.\r\n
+comment1.params=
+comment1.target=void\ main()
+numComments=2
