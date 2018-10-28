@@ -5,21 +5,24 @@ import java.util.Iterator;
 /**
  * Class Room - a room in an adventure game.
  *
- * This class is part of the "World of Zuul" application. 
- * "World of Zuul" is a very simple, text based adventure game.  
+ * This class is part of the "World of Corp" application. 
+ * "World of Corp" is a very simple, text based adventure game.  
  *
  * A "Room" represents one location in the scenery of the game.  It is 
  * connected to other rooms via exits.  For each existing exit, the room 
  * stores a reference to the neighboring room.
  * 
+ * @Nicolas M
  * @author  Michael Kölling and David J. Barnes
- * @version 2011.08.10
+ * @version 1
  */
 
 public class Room 
 {
     private String description;
-    private HashMap<String, Room> exits;        // stores exits of this room.
+    private HashMap<String, Room> exits;         // stores exits of this room.
+    private Item itemroom;                      //stores item in room.   
+    private Item item;                          //stores item.
 
     /**
      * Create a room described "description". Initially, it has
@@ -27,10 +30,12 @@ public class Room
      * "an open court yard".
      * @param description The room's description.
      */
-    public Room(String description) 
+    public Room(String description, String
+                 itemDescription, int itemWeight) 
     {
         this.description = description;
         exits = new HashMap<String, Room>();
+        itemroom = new Item (itemDescription, itemWeight);  //create item for room.
     }
 
     /**
@@ -54,13 +59,17 @@ public class Room
 
     /**
      * Return a description of the room in the form:
-     *     You are in the kitchen.
-     *     Exits: north west
+     *     You are in the room.
+     *     Exits and items exist in the room
      * @return A long description of this room
      */
     public String getLongDescription()
     {
-        return "You are " + description + ".\n" + getExitString();
+        item= this.itemroom;
+        return "You are " + description + ".\n" +
+                getExitString() + ".\n \n" +
+                item.getItemDescription();
+        
     }
 
     /**

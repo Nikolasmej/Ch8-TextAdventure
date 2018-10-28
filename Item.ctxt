@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Item
+comment0.text=\r\n\ Class\ Item\ -\ an\ item\ in\ an\ adventure\ game.\r\n\r\n\ This\ class\ is\ part\ of\ the\ "Corp\ Adventure"\ application.\ \r\n\ "Corp\ Adventure"\ is\ a\ very\ simple,\ text\ based\ adventure\ game.\ \ \r\n\r\n\ "Item"\ represents\ one\ item\ in\ the\ scenery\ of\ the\ game.\ \ It\ is\ \r\n\ adding\ items\ to\ each\ room.\ These\ items\ contain\ an\ unique\ description\ \ \r\n\ and\ weight.\ \r\n\ \r\n\ @author\ \ Nicolas\ M.\r\n\ @version\ 1.\r\n
+comment1.params=itemDescription\ itemWeight
+comment1.target=Item(java.lang.String,\ int)
+comment1.text=\r\n\ Cronstuctor\ for\ objects\ of\ "Item".\r\n\ Book\ and\ online\ references.\r\n
+comment2.params=
+comment2.target=java.lang.String\ getItemDescription()
+comment2.text=\r\n\ The\ item\ description\ in\ a\ room.\r\n\ @return\ Item\ description\ with\ weight.\r\n\ (the\ one\ that\ was\ defined\ in\ the\ constructor).\r\n
+numComments=3
